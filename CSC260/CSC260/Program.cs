@@ -15,7 +15,7 @@ namespace CSC260
         {
             CreateHostBuilder(args).Build().Run();
         }
-
+        //Hello there
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
