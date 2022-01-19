@@ -69,3 +69,89 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.background {
+    background-color: #0d0a0b;
+    color: #847e89;
+}
+
+.bright {
+    background-color: #afbfc0;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    padding: 2%;
+    overflow-y:auto;
+}
+
+.left-div {
+    width: 49%;
+    float: left;
+    margin-bottom:2%;
+    border-radius: 10px;
+    background-color: #847e89;
+    color: white;
+}
+
+.right-div {
+    width: 49%;
+    float: right;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #847e89;
+    color: white;
+}
+
+body{
+    font-size:16px;
+}
+
+img{
+    border-radius: 10px;
+    width: 90%;
+    margin: 5%;
+}
+
+.img-marginless {
+    border-radius: 10px;
+    width: 90%;
+    margin: 0%;
+}
+
+p{
+    margin: 5%;
+}
+
+.main-div {
+    background-color: #64595D;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    padding: 2%;
+    overflow-y: auto;
+}
+
+.nested-rigt-div {
+    width: 49%;
+    float: right;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #EDD4B2;
+    color: white;
+}
+
+.nested-left-div {
+    width: 49%;
+    float: left;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #EDD4B2;
+    color: black;
+}
+
+.nested-div{
+    padding:2%;
+    border-radius:10px;
+    background-color:wheat;
+    font-size:24px;
+}

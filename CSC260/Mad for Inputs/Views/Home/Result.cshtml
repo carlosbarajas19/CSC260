@@ -1,0 +1,31 @@
+﻿@if (!string.IsNullOrEmpty(ViewBag.one) && !string.IsNullOrEmpty(ViewBag.two) && !string.IsNullOrEmpty(ViewBag.three) && !string.IsNullOrEmpty(ViewBag.four) &&
+  !string.IsNullOrEmpty(ViewBag.five) && !string.IsNullOrEmpty(ViewBag.six) && !string.IsNullOrEmpty(ViewBag.seven) && !string.IsNullOrEmpty(ViewBag.eight) &&
+  !string.IsNullOrEmpty(ViewBag.nine) && !string.IsNullOrEmpty(ViewBag.ten))
+{
+    <h1>Driving Tips</h1>
+    <p>
+        Driving a car can be fun if you follow this <em>@ViewBag.one</em> advice.
+    </p>
+    <ul>
+        <li>
+            When approaching a <em>@ViewBag.two</em> on the right, always blow your <em>@ViewBag.three</em>.
+        </li>
+        <li>
+            Before making a <em>@ViewBag.four</em> turn, always stick your <em>@ViewBag.five</em> out of the window.
+        </li>
+        <li>
+            Every 2000 miles, have your <em>@ViewBag.five</em> inspected and your <em>@ViewBag.six</em> checked.
+        </li>
+        <li>
+            When approaching a school, watch out for <em>@ViewBag.seven @ViewBag.eight</em>.
+        </li>
+        <li>
+            Above all, drive <em>@ViewBag.nine</em>. The <em>@ViewBag.ten</em> you save may be your own!
+        </li>
+    </ul>
+}
+else
+{
+    <h5>It appears you might have missed a blank or two... or ten. Please go back and try again.</h5>
+}
+

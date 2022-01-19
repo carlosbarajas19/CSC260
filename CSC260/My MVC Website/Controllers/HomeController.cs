@@ -28,6 +28,21 @@ namespace My_MVC_Website.Controllers
             return View();
         }
 
+        public IActionResult Intro()
+        {
+            return View();
+        }
+
+        public IActionResult BeforeNeumont()
+        {
+            return View();
+        }
+
+        public IActionResult Future()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
