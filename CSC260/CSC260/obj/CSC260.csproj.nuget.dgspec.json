@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio Projects\\CSC260\\CSC260\\CSC260.csproj": {}
+    "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\CSC260\\CSC260.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio Projects\\CSC260\\CSC260\\CSC260.csproj": {
+    "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\CSC260\\CSC260.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Projects\\CSC260\\CSC260\\CSC260.csproj",
+        "projectUniqueName": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\CSC260\\CSC260.csproj",
         "projectName": "CSC260",
-        "projectPath": "D:\\Visual Studio Projects\\CSC260\\CSC260\\CSC260.csproj",
-        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Projects\\CSC260\\CSC260\\obj\\",
+        "projectPath": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\CSC260\\CSC260.csproj",
+        "packagesPath": "C:\\Users\\cbarajas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\CSC260\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cbarajas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
