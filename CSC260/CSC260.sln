@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSC260", "CSC260\CSC260.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My MVC Website", "My MVC Website\My MVC Website.csproj", "{B14444D3-A211-4D23-8C57-AF0E06EACC6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mad for Inputs", "Mad for Inputs\Mad for Inputs.csproj", "{FCE61EE0-FA1E-4922-8B70-F0DCAF04DFF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mad for Inputs", "Mad for Inputs\Mad for Inputs.csproj", "{FCE61EE0-FA1E-4922-8B70-F0DCAF04DFF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLoader", "MovieLoader\MovieLoader.csproj", "{056D2183-E507-4E88-92A8-7610AC4B8C78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FCE61EE0-FA1E-4922-8B70-F0DCAF04DFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCE61EE0-FA1E-4922-8B70-F0DCAF04DFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCE61EE0-FA1E-4922-8B70-F0DCAF04DFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{056D2183-E507-4E88-92A8-7610AC4B8C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056D2183-E507-4E88-92A8-7610AC4B8C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056D2183-E507-4E88-92A8-7610AC4B8C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056D2183-E507-4E88-92A8-7610AC4B8C78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
