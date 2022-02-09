@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MovieLoader.Interfaces;
+using MovieLoader.Data;
 
 namespace MovieLoader
 {
@@ -24,6 +26,8 @@ namespace MovieLoader
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //services.AddTransient<IDataAccessLayer, FavoriteMoviesDAL>();
+            services.AddTransient<IDataAccessLayer, MovieListDAL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
