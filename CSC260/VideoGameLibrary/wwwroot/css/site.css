@@ -69,3 +69,37 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.game-cover {
+    background-color: #333333;
+    width: 100%;
+    height: auto;
+}
+
+.game-cover img {
+    
+    margin-bottom: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.background {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.game-div {
+    background-color: #333333;
+    color: white;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.display-game-div {
+    background-color: white;
+    color: white;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    margin: 1%;
+}

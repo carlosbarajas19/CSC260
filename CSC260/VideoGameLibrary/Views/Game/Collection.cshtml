@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Game>
+@{
+}
+
+@if (Model == null)
+{
+    <h1>No Games provided</h1>
+
+}
+else
+{
+    <h1>Collection</h1>
+    <form class="row" asp-controller="Game" asp-action="SearchForGames" method="post">
+        <input type="text" class="form-control m-2 col-10" name="key" placeholder="Search" />
+        <button type="Submit" class="m-2">Search</button>
+    </form>
+    <form class="row" asp-controller="Game" asp-action="FilterCollection" method="post">
+        <input type="text" class="form-control col-3 m-2" name="Genre" placeholder="Genre" />
+        <select class=" col-3 m-2" name="platform">
+            <option value="null">Platform</option>
+            @foreach (Platform platform in Enum.GetValues(typeof(Platform)))
+            {
+                <option value="@platform">@platform.ToString()</option>
+            }
+        </select>
+        <input type="text" class="form-control col-3 m-2 " name="esrbRating" placeholder="ESRB Rating" />
+        <button class="float-right m-2" type="submit">Filter</button>
+    </form>
+    <div class=" container-fluid ">
+        <div class="row">
+            @foreach (var game in Model)
+            {
+            <div class="col-3 game-div">
+                @if(game.ImagePath == null)
+                {
+                    game.ImagePath = "/Images/NoGamePicture.jpg";
+                }
+                <partial name="GamePartialView.cshtml" for="@game" />
+                <div class="float-left">
+                    @if (game.LoanedTo != null)
+                    {
+                        <h6 class="mt-5">Loaned To:</h6>
+                        <h6>@game.LoanedTo</h6>
+                        <h5>Loaned Date: @game.LoanedDate</h5>
+                        if (ViewBag.mode == "return")
+                        {
+                            <form class="mt-5" asp-controller="Game" asp-action="ReturnGame" method="post">
+                                <input type="number" name="ID" value="@game.ID" hidden="hidden" />
+                                <button type="submit">Return</button>
+                            </form>
+                        }
+
+                    }
+                    else if (ViewBag.mode == "rent")
+                    {
+                        <form class="mt-10" asp-controller="Game" asp-action="Rent" method="post">
+                            <input type="number" name="ID" value="@game.ID" hidden="hidden" />
+                            <input type="text" class="form-control" name="Name" placeholder="Name" />
+                            <button type="submit">Rent</button>
+                        </form>
+                    }
+                    else if (ViewBag.mode == "delete")
+                    {
+                        <form class="mt-10" asp-controller="Game" asp-action="RemoveGame" method="post">
+                            <input type="number" name="ID" value="@game.ID" hidden="hidden" />
+                            <button type="submit">Delete Game</button>
+                        </form>
+                    }
+                </div>
+            </div>
+            }
+
+        </div>
+    </div>
+    
+}

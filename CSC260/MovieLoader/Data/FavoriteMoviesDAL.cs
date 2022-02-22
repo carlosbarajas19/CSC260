@@ -8,7 +8,7 @@ using MovieLoader.Interfaces;
 namespace MovieLoader.Data
 {
 
-    public class FavoriteMoviesDAL : IDataAccessLayer
+    public class FavoriteMoviesDAL //: IDataAccessLayer
     {
         private static List<Movie> MovieList = new List<Movie>()
         {

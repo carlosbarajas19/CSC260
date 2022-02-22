@@ -14,15 +14,21 @@ namespace VideoGameLibrary.Models
 
         ColecoVision,
         Color_TV,
+
         Dendy,
         Dreamcast,
+
         Famicom_Disk_System,
+
         GameBoy,
         GameBoy_Advance,
         GameCube,
         Game_Watch,
+
         Intellivision,
+
         Magnavox_Odyssey,
+
         N_Gage,
         NES,
         NES_Classic,
@@ -30,30 +36,35 @@ namespace VideoGameLibrary.Models
         Nintendo64,
         NintendoDS,
         Nintendo_Switch,
+
+        PC,
+        Philips_CD,
         PlayStation,
         PlayStation2,
         PlayStation3,
         PlayStation4,
         PlayStation5,
         PlayStation_Vita,
+
         Sega_Genesis,
         Sega_Game_Gear,
         Sega_Master_System,
         Sega_Saturn,
         Sega_Pico,
         Sega_CD,
-        Philips_CD,
-        Wii,
         SNES,
-        Wii_U,
         Super_NES,
-        PC,
+
+        Telstar,
+
+        Wii,
+        Wii_U,
+        WonderSwan,
+
+        XBOX,
         XBOX360,
         XBOX_One,
-        XBOX,
-        XBOX_SeriesX,
-        Telstar,
-        WonderSwan
+        XBOX_SeriesX
         
     }
 }

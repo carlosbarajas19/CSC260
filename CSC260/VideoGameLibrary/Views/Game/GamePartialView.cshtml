@@ -1,6 +1,4 @@
-﻿GamePartialView
-
-@model Game
+﻿@model Game
 
 @if (Model == null)
 {
@@ -8,9 +6,20 @@
 }
 else
 {
-    <div>
-        <h3>@Model.Title</h3>
-        <h4>Year: @Model.Year</h4>
-        <h5>Rating: @Model.Rating</h5>
+<div>
+
+    <h3 class="text-center">@Model.Title</h3>
+    <div class="game-cover">
+        <img src="@Model.ImagePath" />
     </div>
+    <div class="float-left">
+        <h5>Year: @Model.Year</h5>
+        <h5>Rating: @Model.Rating</h5>
+        <h5>Platform: @Model.Platform.ToString()</h5>
+        <h5>Genre: @Model.Genre</h5>
+        
+    </div>
+
+
+</div>
 }

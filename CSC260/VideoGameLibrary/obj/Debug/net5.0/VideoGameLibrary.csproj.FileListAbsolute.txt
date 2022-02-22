@@ -41,3 +41,6 @@ C:\Users\cbarajas\source\repos\CSC260\CSC260\VideoGameLibrary\obj\Debug\net5.0\r
 C:\Users\cbarajas\source\repos\CSC260\CSC260\VideoGameLibrary\obj\Debug\net5.0\VideoGameLibrary.pdb
 C:\Users\cbarajas\source\repos\CSC260\CSC260\VideoGameLibrary\obj\Debug\net5.0\VideoGameLibrary.genruntimeconfig.cache
 C:\Users\cbarajas\source\repos\CSC260\CSC260\VideoGameLibrary\obj\Debug\net5.0\VideoGameLibrary.csproj.CopyComplete
+C:\Users\cbarajas\source\repos\CSC260\CSC260\VideoGameLibrary\obj\Debug\net5.0\Razor\Views\Game\Collection.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\VideoGameLibrary\obj\Debug\net5.0\Razor\Views\Game\GameForm.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\VideoGameLibrary\obj\Debug\net5.0\Razor\Views\Game\Rent.cshtml.g.cs
