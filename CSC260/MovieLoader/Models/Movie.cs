@@ -1,22 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using MovieLoader.Validators;
 
 namespace MovieLoader.Models
 {
-    [NinetysMovieRating]
+    //[NinetysMovieRating]
     public class Movie
     {
-        public static int nextID = 0;
+        /*public static int nextID = 0;
 
-        private int id = nextID++;
+        private int id = nextID++;*/
+        [Required]
+        public int ID { get; set; }
 
-        public int? ID { get { return id; } }
+        [Required]
+        [MaxLength(450)]
+
+        public string UserId { get; set; }
 
         //[Required (ErrorMessage = "Hello??? As you can see, the Title is required... please don't leave it empty ")] 
+        [Column(TypeName = "varchar(500)")]
         public string Title { get; set; }
         //[Range (2000, 2022, ErrorMessage = "Year must be between 2000 and 2022")]
         public int Year { get; set; }

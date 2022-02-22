@@ -7,6 +7,7 @@ using MovieLoader.Interfaces;
 
 namespace MovieLoader.Data
 {
+
     public class FavoriteMoviesDAL : IDataAccessLayer
     {
         private static List<Movie> MovieList = new List<Movie>()
@@ -53,6 +54,11 @@ namespace MovieLoader.Data
             {
                 MovieList.Remove(foundMovie);
             }
+        }
+
+        public void UpdateMovie(Movie movie)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 using MovieLoader.Models;
 using MovieLoader.Interfaces;
 using MovieLoader.Data;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace MovieLoader.Controllers
 {
+
+    [Authorize]
     public class MovieController : Controller
     {
 
@@ -28,10 +32,18 @@ namespace MovieLoader.Controllers
             return View(dal.GetMovies().OrderBy(m => m.ReleaseDate).ToList());
         }
 
+        public IActionResult MovieForm()
+        {
+            return View();
+        }
+
         public IActionResult DisplayMovie()
         {
+            string userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            string email = User.FindFirstValue(ClaimTypes.Email); //also .Name
             //Movie m = new Movie("Iron Man", 2008, 5.0f),
             //return View(m);
+
             return View();
         }
 
@@ -45,12 +57,10 @@ namespace MovieLoader.Controllers
         [HttpPost]
         public IActionResult AddMovie(Movie movie)
         {
-            
-
             if(ModelState.IsValid)
             {
-                dal.RemoveMovie(movie.ID);
-                dal.AddMovie(movie);
+                //dal.AddMovie(movie);
+                ViewBag.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 return Redirect("/Movie/MovieIndex");
             }
 
@@ -60,16 +70,29 @@ namespace MovieLoader.Controllers
         public IActionResult EditMovie(int id)
         {
             Movie m;
-            m = dal.GetMovie(id);
-            dal.RemoveMovie(id);
+            m = dal.GetMovie(User.FindFirstValue(ClaimTypes.NameIdentifier), id);
+            ViewBag.mode = "Edit";
+            ViewBag.ID = id;
 
             return View("MovieForm", m);
         }
 
+        //saves an existing record
+        public IActionResult UpdateMovie(Movie movie)
+        {
+            if(ModelState.IsValid)
+            {
+                dal.UpdateMovie(User.FindFirstValue(ClaimTypes.NameIdentifier), movie);
+                return Redirect("/Movie/MovieIndex");
+            }
+
+            return View("MovieForm", movie);
+        }
+
         public IActionResult DeleteMovie(int? id)
         {
-            dal.RemoveMovie(id);
-            return View("MoviesIndex", dal.GetMovies());
+            dal.RemoveMovie(User.FindFirstValue(ClaimTypes.NameIdentifier), id);
+            return View("MovieIndex", dal.GetMovies());
         }
     }
 }

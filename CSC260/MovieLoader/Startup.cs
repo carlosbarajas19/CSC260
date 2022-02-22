@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MovieLoader.Interfaces;
 using MovieLoader.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace MovieLoader
 {
@@ -26,7 +27,11 @@ namespace MovieLoader
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //services.AddTransient<IDataAccessLayer, FavoriteMoviesDAL>();
+            services.AddDbContext<MovieContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("MovieDB"));
+            });
+
             services.AddTransient<IDataAccessLayer, MovieListDAL>();
         }
 
@@ -48,6 +53,7 @@ namespace MovieLoader
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -55,6 +61,8 @@ namespace MovieLoader
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapRazorPages();
             });
         }
     }

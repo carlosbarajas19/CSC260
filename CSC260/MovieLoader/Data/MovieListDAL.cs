@@ -9,50 +9,71 @@ namespace MovieLoader.Data
 {
     public class MovieListDAL : IDataAccessLayer
     {
-        private static List<Movie> MovieList = new List<Movie>()
-        {
-             new Movie("Iron Man", 2008, 4.5f),
-             new Movie("Star Wars", 1977, 5.0f),
-             new Movie("The Truman Show", 1998, 4.3f),
-             new Movie("The Princess Bride", 1987, 4.9f)
+        //private static List<Movie> MovieList = new List<Movie>()
+        //{
+        //     new Movie("Iron Man", 2008, 4.5f),
+        //     new Movie("Star Wars", 1977, 5.0f),
+        //     new Movie("The Truman Show", 1998, 4.3f),
+        //     new Movie("The Princess Bride", 1987, 4.9f)
 
-        };
+        //};
+
+        private MovieContext db;
+
+        public MovieListDAL(MovieContext indb)
+        {
+            this.db = indb;
+        }
 
         public void AddMovie(Movie movie)
         {
-            MovieList.Add(movie);
+            //movie.ID = 0;
+            db.Add(movie);
+            db.SaveChanges();
+            //MovieList.Remove(movie);
+            //MovieList.Add(movie);
         }
 
-        public Movie GetMovie(int? id)
+        public Movie GetMovie(string userId, int? id)
         {
-            Movie foundMovie = null;
-            if(id != null)
+            return db.Movies
+                .Where(m => m.ID == id && m.UserId == userId)
+                .FirstOrDefault();
+
+            //Movie foundMovie = null;
+            
+            //if(id != null)
+            //{
+            //    MovieList.ForEach(m =>
+            //    {
+            //        if (m.ID == id)
+            //        {
+            //            foundMovie = m;
+            //        }
+            //    });
+            //}
+            //return foundMovie;
+        }
+
+        public IEnumerable<Movie> GetMovies(string userId)
+        {
+            return db.Movies.Where(m => m.UserId == userId).ToList();
+        }
+
+        public void RemoveMovie(string userId, int? id)
+        {
+            Movie foundMovie = GetMovie(userId, id);
+            if(foundMovie != null)
             {
-                MovieList.ForEach(m =>
-                {
-                    if (m.ID == id)
-                    {
-                        foundMovie = m;
-                    }
-                });
+                db.Movies.Remove(foundMovie);
+                db.SaveChanges();
             }
-            return foundMovie;
-        }
 
-        public IEnumerable<Movie> GetMovies()
-        {
-            return MovieList;
-        }
-
-        public void RemoveMovie(int? id)
-        {
-            if (id == null || id == 0) return;
-
-            var foundMovie = GetMovie(id);
+            /*var foundMovie = GetMovie(id);
             if(foundMovie != null)
             {
                 MovieList.Remove(foundMovie);
-            }
+            }*/
         }
 
         public IEnumerable<Movie> Search(string strSearchTerm)
@@ -72,6 +93,14 @@ namespace MovieLoader.Data
 
             return tmpMovies.Where(m => m.Title.Contains(strSearchTerm)).ToList();
         }
+
+        public void UpdateMovie(String userId, Movie movie)
+        {
+            movie.UserId = userId;
+            db.Update(movie);
+            db.SaveChanges();
+        }
+
 
     }
 }

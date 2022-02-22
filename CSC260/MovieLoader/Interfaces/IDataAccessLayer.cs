@@ -12,8 +12,10 @@ namespace MovieLoader.Interfaces
 
         void AddMovie(Movie movie);
 
-        void RemoveMovie(int? id);
+        void RemoveMovie(string userId, int? id);
 
-        Movie GetMovie(int? id);
+        Movie GetMovie(string userId, int? id);
+
+        void UpdateMovie(string userId, Movie movie);
     }
 }

@@ -126,7 +126,6 @@ C:\Users\cbarajas\Source\Repos\CSC260\CSC260\CSC260\bin\Debug\net5.0\zh-Hans\Mic
 C:\Users\cbarajas\Source\Repos\CSC260\CSC260\CSC260\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\cbarajas\Source\Repos\CSC260\CSC260\CSC260\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\cbarajas\Source\Repos\CSC260\CSC260\CSC260\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\cbarajas\Source\Repos\CSC260\CSC260\CSC260\obj\Debug\net5.0\CSC260.csproj.AssemblyReference.cache
 C:\Users\cbarajas\Source\Repos\CSC260\CSC260\CSC260\obj\Debug\net5.0\CSC260.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\cbarajas\Source\Repos\CSC260\CSC260\CSC260\obj\Debug\net5.0\CSC260.AssemblyInfoInputs.cache
 C:\Users\cbarajas\Source\Repos\CSC260\CSC260\CSC260\obj\Debug\net5.0\CSC260.AssemblyInfo.cs
@@ -236,3 +235,4 @@ D:\Visual Studio Projects\CSC260\CSC260\bin\Debug\net5.0\runtimes\win-arm\lib\ne
 D:\Visual Studio Projects\CSC260\CSC260\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Visual Studio Projects\CSC260\CSC260\obj\Debug\net5.0\Razor\Views\Home\Form.cshtml.g.cs
 D:\Visual Studio Projects\CSC260\CSC260\obj\Debug\net5.0\Razor\Views\Home\Result.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\CSC260\obj\Debug\net5.0\CSC260.csproj.AssemblyReference.cache
