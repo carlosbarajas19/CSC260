@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\My MVC Website\\My MVC Website.csproj": {}
+    "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\My MVC Website\\My MVC Website.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\My MVC Website\\My MVC Website.csproj": {
+    "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\My MVC Website\\My MVC Website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\My MVC Website\\My MVC Website.csproj",
+        "projectUniqueName": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\My MVC Website\\My MVC Website.csproj",
         "projectName": "My MVC Website",
-        "projectPath": "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\My MVC Website\\My MVC Website.csproj",
-        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\My MVC Website\\obj\\",
+        "projectPath": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\My MVC Website\\My MVC Website.csproj",
+        "packagesPath": "C:\\Users\\cbarajas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\My MVC Website\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cbarajas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
