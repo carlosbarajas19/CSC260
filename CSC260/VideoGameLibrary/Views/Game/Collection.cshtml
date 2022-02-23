@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<Game>
 @{
+    string strAction = ViewBag.mode;
 }
 
 @if (Model == null)
@@ -12,6 +13,7 @@ else
     <h1>Collection</h1>
     <form class="row" asp-controller="Game" asp-action="SearchForGames" method="post">
         <input type="text" class="form-control m-2 col-10" name="key" placeholder="Search" />
+        <input type="text" name="gameView" value="@strAction" hidden="hidden" />
         <button type="Submit" class="m-2">Search</button>
     </form>
     <form class="row" asp-controller="Game" asp-action="FilterCollection" method="post">
@@ -24,6 +26,7 @@ else
             }
         </select>
         <input type="text" class="form-control col-3 m-2 " name="esrbRating" placeholder="ESRB Rating" />
+        <input type="text" name="gameView" value="@strAction" hidden="hidden" />
         <button class="float-right m-2" type="submit">Filter</button>
     </form>
     <div class=" container-fluid ">
@@ -46,6 +49,7 @@ else
                         {
                             <form class="mt-5" asp-controller="Game" asp-action="ReturnGame" method="post">
                                 <input type="number" name="ID" value="@game.ID" hidden="hidden" />
+                                <input type="text" name="gameView" value="@strAction" hidden="hidden" />
                                 <button type="submit">Return</button>
                             </form>
                         }
@@ -55,6 +59,7 @@ else
                     {
                         <form class="mt-10" asp-controller="Game" asp-action="Rent" method="post">
                             <input type="number" name="ID" value="@game.ID" hidden="hidden" />
+                            <input type="text" name="gameView" value="@strAction" hidden="hidden" />
                             <input type="text" class="form-control" name="Name" placeholder="Name" />
                             <button type="submit">Rent</button>
                         </form>
@@ -63,6 +68,7 @@ else
                     {
                         <form class="mt-10" asp-controller="Game" asp-action="RemoveGame" method="post">
                             <input type="number" name="ID" value="@game.ID" hidden="hidden" />
+                            <input type="text" name="gameView" value="@strAction" hidden="hidden"/>
                             <button type="submit">Delete Game</button>
                         </form>
                     }

@@ -10,3 +10,15 @@ C:\Users\cbarajas\source\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.dl
 C:\Users\cbarajas\source\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\ref\LINQAPI.dll
 C:\Users\cbarajas\source\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.pdb
 C:\Users\cbarajas\source\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\bin\Debug\net5.0\LINQAPI.deps.json
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\bin\Debug\net5.0\LINQAPI.dll
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\bin\Debug\net5.0\ref\LINQAPI.dll
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\bin\Debug\net5.0\LINQAPI.pdb
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.AssemblyInfo.cs
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.dll
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\ref\LINQAPI.dll
+D:\Visual Studio Projects\repos\CSC260\CSC260\LINQAPI\obj\Debug\net5.0\LINQAPI.pdb

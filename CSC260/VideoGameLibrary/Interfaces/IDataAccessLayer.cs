@@ -24,6 +24,7 @@ namespace VideoGameLibrary.Interfaces
         IEnumerable<Game> SearchForGames(string key);
         IEnumerable<Game> FiterCollection(string genre = null, Platform? platform = null, string esrbRating = null);
         void AddGame(Game game);
+        void UpdateGame(Game game);
         void DeleteGame(int? id);
 
         

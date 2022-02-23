@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\LINQAPI\\LINQAPI.csproj": {}
+    "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\LINQAPI\\LINQAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\LINQAPI\\LINQAPI.csproj": {
+    "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\LINQAPI\\LINQAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\LINQAPI\\LINQAPI.csproj",
+        "projectUniqueName": "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\LINQAPI\\LINQAPI.csproj",
         "projectName": "LINQAPI",
-        "projectPath": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\LINQAPI\\LINQAPI.csproj",
-        "packagesPath": "C:\\Users\\cbarajas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cbarajas\\source\\repos\\CSC260\\CSC260\\LINQAPI\\obj\\",
+        "projectPath": "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\LINQAPI\\LINQAPI.csproj",
+        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual Studio Projects\\repos\\CSC260\\CSC260\\LINQAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cbarajas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

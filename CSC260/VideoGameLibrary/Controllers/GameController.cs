@@ -12,7 +12,11 @@ namespace VideoGameLibrary.Controllers
     
     public class GameController : Controller
     {
-        IDataAccessLayer dal = new GameListDAL();
+        IDataAccessLayer dal;
+        public GameController(IDataAccessLayer indal)
+        {
+            dal = indal;
+        }
 
         public IActionResult Collection()
         {
@@ -42,8 +46,9 @@ namespace VideoGameLibrary.Controllers
         }
 
         [HttpPost]
-        public IActionResult FilterCollection(string genre = null, Platform? platform = null, string esrbRating = null)
+        public IActionResult FilterCollection(string gameView, string genre = null, Platform? platform = null, string esrbRating = null)
         {
+            ViewBag.mode = gameView;
             return View("Collection" ,dal.FiterCollection(genre, platform, esrbRating).ToList());
         }
 
@@ -60,27 +65,48 @@ namespace VideoGameLibrary.Controllers
         }
 
         [HttpPost]
-        public IActionResult Rent(int ID, string name)
+        public IActionResult Rent(string gameView, int ID, string name)
         {
+            ViewBag.mode = gameView;
             if (name is null) return View("Collection", dal.GetCollection());
-            dal.GetCollection().ToList().Find(g => g.ID == ID).Rent(name);
+
+            var gm = dal.GetCollection().ToList().Find(g => g.ID == ID);
+            if(gm != null)
+            {
+                gm.Rent(name);
+                dal.UpdateGame(gm);
+            }
+
+            if(gameView == "rent") return RentGames();
             return View("Collection", dal.GetCollection().ToList());
         }
         [HttpPost]
-        public IActionResult ReturnGame(int ID)
+        public IActionResult ReturnGame(string gameView, int ID)
         {
-            dal.GetCollection().ToList().Find(g => g.ID == ID).Return();
+            ViewBag.mode = gameView;
+            var gm = dal.GetCollection().ToList().Find(g => g.ID == ID);
+            if (gm != null)
+            {
+                gm.Return();
+                dal.UpdateGame(gm);
+            }
+
+            if (gameView == "return") return ReturnAGame();
             return View("Collection", dal.GetCollection().ToList());
         }
         [HttpPost]
-        public IActionResult RemoveGame(int ID)
+        public IActionResult RemoveGame(string gameView, int ID)
         {
+            ViewBag.mode = gameView;
             dal.DeleteGame(ID);
+
+            if (gameView == "delete") return DeleteGame();
             return View("Collection", dal.GetCollection().ToList());
         }
         [HttpPost]
-        public IActionResult SearchForGames(string key)
+        public IActionResult SearchForGames(string gameView, string key)
         {
+            ViewBag.mode = gameView;
             return View("Collection", dal.SearchForGames(key));
         }
     }
