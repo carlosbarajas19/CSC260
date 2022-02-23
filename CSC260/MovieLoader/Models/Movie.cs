@@ -33,6 +33,10 @@ namespace MovieLoader.Models
 
         public DateTime ReleaseDate;
 
+        public int GenreId { get; set; }
+
+        public Genre genre { get; set; }
+
         //public string LoanedTo { get; set; }
         
         //public DateTime? LoanedDate { get; set; }

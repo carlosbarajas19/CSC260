@@ -21,5 +21,7 @@
         <span asp-validation-for="Title" class="error-message"></span>
     <input asp-for="Year" placeholder="Year" />
     <input asp-for="Rating" placeholder="Rating" />
+    <select asp-for="GenreId" asp-items="@ViewBag.Genres"></select>
+
     <button type="submit">Save</button>
 </form>

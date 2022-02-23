@@ -60,11 +60,6 @@ namespace MovieLoader.Data
             return db.Movies.Where(m => m.UserId == userId).ToList();
         }
 
-        public IEnumerable<Movie> GetMovies()
-        {
-            throw new NotImplementedException();
-        }
-
         public void RemoveMovie(string userId, int? id)
         {
             Movie foundMovie = GetMovie(userId, id);
@@ -104,6 +99,11 @@ namespace MovieLoader.Data
             movie.UserId = userId;
             db.Update(movie);
             db.SaveChanges();
+        }
+
+        public List<Genre> GetGenres()
+        {
+            throw new NotImplementedException();
         }
 
 
