@@ -17,7 +17,7 @@ namespace VideoGameLibrary.Models
         public int Year { get; set; }
         public string LoanedTo { get; set; } = null;
         public string ImagePath { get; set; } = null;
-        public DateTime? LoanedDate;
+        public DateTime? LoanedDate { get; set; }
 
         public int ID { get; set; }
 
