@@ -30,7 +30,44 @@ namespace MovieLoader.Controllers
         {
             //return View();
             //return View(dal.GetMovies());
-            return View(dal.GetMovies(User.FindFirstValue(ClaimTypes.NameIdentifier)).ToList());
+            var viewModel = new MoviePage(
+                dal.GetMovies(User.FindFirstValue(ClaimTypes.NameIdentifier))
+                .OrderBy(m => m.ReleaseDate).ToList(),
+                new SelectList(dal.GetGenres(), "Id", "Title")
+                );
+            return View(viewModel);
+        }
+
+
+        [HttpGet]
+        public IActionResult AddMovie()
+        {
+
+            var genreList = dal.GetGenres();
+            ViewBag.Genres = new SelectList(genreList, "Id", "Title");
+            //ViewBag.ID = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            return View("MovieForm");
+        }
+
+        [HttpPost]
+        public IActionResult AddMovie(Movie movie)
+        {
+            if (ModelState.IsValid)
+            {
+                //dal.AddMovie(movie);
+                //ViewBag.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                movie.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                dal.AddMovie(movie);
+                return Redirect("/Movie/MovieIndex");
+
+
+                //var genreList = dal.GetGenres();
+                //ViewBag.Genres = new SelectList(genreList, "Id", "Title");
+            }
+
+            return View("MovieForm", movie);
         }
 
         public IActionResult MovieForm()
@@ -54,21 +91,6 @@ namespace MovieLoader.Controllers
             var mv = dal.GetMovies(User.FindFirstValue(ClaimTypes.NameIdentifier)).ToList().Find(x => x.Title == title);
             mv.ReturnMovie();
             return View("MovieIndex", dal.GetMovies(User.FindFirstValue(ClaimTypes.NameIdentifier)).ToList());
-        }
-        [HttpPost]
-        public IActionResult AddMovie(Movie movie)
-        {
-            if(ModelState.IsValid)
-            {
-                //dal.AddMovie(movie);
-                ViewBag.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-                var genreList = dal.GetGenres();
-                ViewBag.Genres = new SelectList(genreList, "Id", "Title");
-                return Redirect("/Movie/MovieIndex");
-            }
-
-            return View("MovieForm", movie);
         }
 
         public IActionResult EditMovie(int id)

@@ -24,6 +24,7 @@ else
                         <th>Year</th>
                         <th>Rating</th>
                         <th>Release Date</th>
+                        <th>Genre</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -31,7 +32,7 @@ else
                 <tbody>
                     @foreach (var movie in Model.MovieList)
                     {
-                        <partial name="MoviePartialView.cshtml" for="@movie" />
+                        <partial name="MoviePartialView.cshtml" for="@movie"/>
                     }
                 </tbody>
             </table>

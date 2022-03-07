@@ -19,4 +19,10 @@
     <Folder Include="Migrations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Areas\Admin\Pages\Index.cshtml" />
+    <None Include="Areas\Admin\Pages\Roles\Create.cshtml" />
+    <None Include="Areas\Admin\Pages\Roles\Index.cshtml" />
+  </ItemGroup>
+
 </Project>

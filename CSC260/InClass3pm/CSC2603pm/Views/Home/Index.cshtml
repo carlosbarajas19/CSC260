@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page - in view";
+
+}
+
+<div class="row">
+    <div class="col-4 border">
+        <!--<a href="/home/privacy?pizza=pepperoni">Privacy</a>-->
+        <a asp-controller="Home" asp-action="Privacy" asp-route-pizza="pepper oni">Privacy</a>
+        <!--<a asp-controller="Home" asp-action="Contact"><img src="~/images/shrek.jfif" id="shreksize" /></a>-->
+        <a asp-controller="Home" asp-action="Test" asp-route-id="15">Test</a>
+
+    </div>
+    <div class="col-4 border">Row 1 Col 2</div>
+    <div class="col-4 border">Row 1 Col 3</div>
+    <div class="col-4 border">Row 2 Col 1</div>
+    <div class="col-4 border">Row 2 Col 2</div>
+    <div class="col-4 border">Row 2 Col 3</div>
+    <div class="col-4 border">Row 3 Col 1</div>
+</div>
+<div class="row">
+    <div class="col-8 border">
+        Row 2 Col 1
+    </div>
+    <div class="col-2 border">Row 2 Col 2</div>
+    <div class="col-2 border">Row 2 Col 3</div>
+</div>
+

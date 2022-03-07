@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MovieLoader.Models;
 using MovieLoader.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace MovieLoader.Data
 {
@@ -37,27 +38,13 @@ namespace MovieLoader.Data
         public Movie GetMovie(string userId, int? id)
         {
             return db.Movies
-                .Where(m => m.ID == id && m.UserId == userId)
+                .Where(m => m.ID == id && m.UserId == userId).Include(m => m.genre)
                 .FirstOrDefault();
-
-            //Movie foundMovie = null;
-            
-            //if(id != null)
-            //{
-            //    MovieList.ForEach(m =>
-            //    {
-            //        if (m.ID == id)
-            //        {
-            //            foundMovie = m;
-            //        }
-            //    });
-            //}
-            //return foundMovie;
         }
 
         public IEnumerable<Movie> GetMovies(string userId)
         {
-            return db.Movies.Where(m => m.UserId == userId).ToList();
+            return db.Movies.Where(m => m.UserId == userId).Include(m => m.genre).ToList();
         }
 
         public void RemoveMovie(string userId, int? id)
@@ -103,7 +90,7 @@ namespace MovieLoader.Data
 
         public List<Genre> GetGenres()
         {
-            throw new NotImplementedException();
+            return db.Genres.ToList();
         }
 
 

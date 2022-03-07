@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSC2603pm", "CSC2603pm\CSC2603pm.csproj", "{69161DF2-9F77-40D1-8B25-2853AF84A0A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQAPI", "LINQAPI\LINQAPI.csproj", "{5AA06239-260A-49EF-87F5-1AEA9CD664D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69161DF2-9F77-40D1-8B25-2853AF84A0A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69161DF2-9F77-40D1-8B25-2853AF84A0A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69161DF2-9F77-40D1-8B25-2853AF84A0A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69161DF2-9F77-40D1-8B25-2853AF84A0A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA06239-260A-49EF-87F5-1AEA9CD664D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA06239-260A-49EF-87F5-1AEA9CD664D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA06239-260A-49EF-87F5-1AEA9CD664D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA06239-260A-49EF-87F5-1AEA9CD664D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D971553E-DC29-440A-B402-D8230D95A595}
+	EndGlobalSection
+EndGlobal

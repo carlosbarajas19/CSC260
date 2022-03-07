@@ -1,0 +1,12 @@
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\bin\Debug\net5.0\LINQAPI.deps.json
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\bin\Debug\net5.0\LINQAPI.dll
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\bin\Debug\net5.0\ref\LINQAPI.dll
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\bin\Debug\net5.0\LINQAPI.pdb
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\obj\Debug\net5.0\LINQAPI.csproj.AssemblyReference.cache
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\obj\Debug\net5.0\LINQAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\obj\Debug\net5.0\LINQAPI.AssemblyInfoInputs.cache
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\obj\Debug\net5.0\LINQAPI.AssemblyInfo.cs
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\obj\Debug\net5.0\LINQAPI.csproj.CoreCompileInputs.cache
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\obj\Debug\net5.0\LINQAPI.dll
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\obj\Debug\net5.0\ref\LINQAPI.dll
+C:\Users\rcomire\OneDrive\Neumont\CSC260\Live\CSC260Live3pm\InClass3pm\LINQAPI\obj\Debug\net5.0\LINQAPI.pdb

@@ -33,6 +33,9 @@ namespace MovieLoader
             });
 
             services.AddTransient<IDataAccessLayer, MovieListDAL>();
+
+            //02-24-2022 razor pages
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

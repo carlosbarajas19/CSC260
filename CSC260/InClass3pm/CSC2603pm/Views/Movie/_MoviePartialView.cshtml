@@ -1,0 +1,25 @@
+﻿@model Movie
+@if (@Model.ID == null)
+{
+    <h1>No movie provided to partial view</h1>
+}
+else
+{
+
+<tr>
+    <td>
+        @Model.ID
+    </td>
+    <td>
+        <a asp-controller="Movie" asp-action="DisplayMovie" asp-route-id="@Model.ID">@Model.Title</a>
+    </td>
+    <td>@Model.Year</td>
+    <td>@Model.Rating</td>
+    <td>@Model.ReleaseDate.ToLongDateString() @Model.ReleaseDate.ToLongTimeString()</td>
+    <td>@(Model.Genre != null ? Model.Genre.Title : "Unknown")</td>
+    <td><a asp-controller="Movie" asp-action="EditMovie" asp-route-id="@Model.ID">Edit</a></td>
+    <td><a asp-controller="Movie" asp-action="DeleteMovie" asp-route-id="@Model.ID">Delete</a></td>
+</tr>
+}
+
+

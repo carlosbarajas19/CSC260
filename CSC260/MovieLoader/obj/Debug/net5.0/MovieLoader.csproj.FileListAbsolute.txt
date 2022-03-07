@@ -104,8 +104,6 @@ C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\
 C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\MovieLoader.RazorTargetAssemblyInfo.cache
 C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\MovieLoader.RazorTargetAssemblyInfo.cs
 C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\MovieLoader.Views.pdb
@@ -406,3 +404,10 @@ D:\Visual Studio Projects\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Movie
 D:\Visual Studio Projects\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\ref\MovieLoader.dll
 D:\Visual Studio Projects\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\MovieLoader.pdb
 D:\Visual Studio Projects\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\MovieLoader.genruntimeconfig.cache
+C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Pages\Test.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Index.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\_ViewImports.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\_ViewStart.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Roles\Index.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Roles\Create.cshtml.g.cs
+C:\Users\cbarajas\source\repos\CSC260\CSC260\MovieLoader\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Roles\AddUseRole.cshtml.g.cs
